@@ -84,5 +84,6 @@ body{
         width: 60%;
         height: 2%;
         border-radius: 60%;
+        border: 3px solid rgb(255, 255, 255);
 
     }
