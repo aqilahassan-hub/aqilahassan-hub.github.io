@@ -1,183 +1,161 @@
-/* ---------- Base ---------- */
 :root{
   --bg: #eef1f6;
   --sidebar: #1f2933;
-  --sidebar-2: #111827;
   --accent: #15B1CD;
   --text: #0f172a;
-  --muted: #475569;
+  --muted: #64748b;
   --card: #ffffff;
-  --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-  --radius: 16px;
+  --radius: 18px;
 }
 
-*{ box-sizing: border-box; }
-
+/* ---------- Base ---------- */
 body{
   margin: 0;
-  padding: 0;
-  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-family: "Roboto", system-ui, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.7;
+  font-size: 16px;   /* bigger base */
 }
 
 /* ---------- Header ---------- */
 header{
-  background: linear-gradient(90deg, var(--sidebar), var(--sidebar-2));
+  background: #1f2933;
+  height: 90px;
   width: 100%;
-  height: 80px;
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 /* ---------- Sidebar ---------- */
 .sidebar{
   position: fixed;
-  top: 80px;                 /* align under header cleanly */
+  top: 90px;
   left: 0;
-  width: 290px;
-  height: calc(100vh - 80px);
+  width: 300px;
+  height: calc(100vh - 90px);
+  background: #1f2933;
+  padding: 30px 22px;
   overflow-y: auto;
-
-  padding: 22px 16px 28px;
-  background: linear-gradient(180deg, var(--sidebar), var(--sidebar-2));
-  border-right: 1px solid rgba(255,255,255,0.08);
 }
 
-/* nicer scrollbar (optional) */
-.sidebar::-webkit-scrollbar{ width: 10px; }
-.sidebar::-webkit-scrollbar-thumb{
-  background: rgba(255,255,255,0.15);
-  border-radius: 999px;
-}
-
-/* Profile photo */
+/* Profile image */
 .image{
   display: block;
-  margin: 10px auto 14px;
-  width: 140px !important;
-  height: 140px !important;
-  object-fit: cover;
-  border-radius: 999px;
-  border: 3px solid rgba(255,255,255,0.9);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  margin: 0 auto 18px;
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  border: 4px solid #fff;
 }
 
-/* Sidebar headings/text */
+/* Name */
 .sidebar h2{
-  margin: 8px 0 6px;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
+  text-align: center;
+  color: #6ebbdf;
+  font-size: 22px;
+  margin: 10px 0 8px;
 }
 
+/* Subtitle */
 .sidebar p{
-  margin: 0 0 14px;
-  font-size: 13px;
+  text-align: center;
   color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  margin-bottom: 22px;
 }
 
-/* Links and items */
+/* Sidebar sections */
 .sidebar li{
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 22px;
 }
 
+/* Sidebar links/text */
 .sidebar a{
-  color: rgba(255,255,255,0.92);
-  text-decoration: none;
   display: block;
-  padding: 10px 12px;
-  margin: 6px 0;
-  border-radius: 12px;
-  transition: background 0.18s ease, transform 0.18s ease, opacity 0.18s ease;
-  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 6px 0;
 }
 
 .sidebar a:hover{
-  background: rgba(21, 177, 205, 0.18);
-  transform: translateX(2px);
+  color: var(--accent);
 }
 
-.sidebar a:active{
-  transform: translateX(1px);
-}
-
+/* Icons */
 .sidebar i{
-  margin-right: 10px;
-  width: 18px;
-  text-align: center;
-  color: rgba(255,255,255,0.85);
+  margin-right: 8px;
 }
 
 /* Stars */
-.sidebar .checked{
+.checked{
   color: #ffd400;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.35));
 }
 
 /* ---------- Content ---------- */
 .content{
-  margin-left: 310px; /* fits 290px sidebar + spacing */
-  padding: 26px 46px 60px;
-  max-width: 1100px;
+  margin-left: 320px;
+  padding: 40px 70px 60px;
+  max-width: 1000px;
 }
 
-/* Make sections feel like cards */
-.content > h2{
-  margin-top: 18px;
-  margin-bottom: 10px;
-  font-size: 22px;
+/* Section titles */
+.content h2{
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 16px;
   color: #1f3a52;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 6px;
 }
 
-.content p, .content h4, .content h5{
-  margin-top: 6px;
+/* Sub headings */
+.content h3{
+  font-size: 20px;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+.content h4{
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.content h5{
+  font-size: 15px;
+  color: var(--muted);
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
-/* optional: wrap content in a card feel */
-.content{
-  background: transparent;
+/* Paragraph spacing */
+.content p{
+  margin-bottom: 14px;
+  font-size: 16px;
 }
 
-.content .card{
-  background: var(--card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 18px 18px;
-  margin: 14px 0;
+/* Lists */
+.content ul, .content li{
+  margin-bottom: 8px;
 }
 
-/* If you don't want to modify HTML, at least make the overall content "card-like" */
-.content{
-  border-radius: var(--radius);
-}
-
-/* ---------- Footer ---------- */
+/* Footer */
 .footer{
   text-align: center;
-  margin-top: 26px;
-  padding: 14px 0;
+  margin-top: 40px;
   color: var(--muted);
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 980px){
+@media (max-width: 900px){
   .sidebar{
     position: static;
-    width: auto;
+    width: 100%;
     height: auto;
-    top: 0;
-    border-right: none;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
   }
   .content{
     margin-left: 0;
-    padding: 18px 18px 40px;
+    padding: 25px;
   }
 }
