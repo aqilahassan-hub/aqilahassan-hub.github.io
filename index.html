@@ -1,128 +1,196 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <title>Aqila Hassaan</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <meta charset="utf-8">
+  <title>Aqila Hassan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
 
-<header></header>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text">Portfolio / CV</span>
+    </div>
+  </div>
+</header>
 
-<div class="sidebar">
-    <img src="1.jpg" class="image" width="180px" height="140px">
-    <h2 style="color:#6ebbdf ;text-align:center">Aqila Hassan</h2>
-    <p style="color:#d7dde0 ;text-align:center">
-        Master’s Student in Computer Science <br>
-        Kansas, USA (Jan 2026 – Present)
+<aside class="sidebar">
+  <div class="sidebar-profile">
+    <img src="1.jpg" class="image" alt="Profile photo">
+    <h2 class="name">Aqila Hassan</h2>
+    <p class="role">
+      Master’s Student in Computer Science <br>
+      Kansas, USA (Jan 2026 – Present)
     </p>
+  </div>
 
-    <li>
-        <a href="#"><i class="fa fa-info"></i> Details:</a>
-        <a>aqila.hassan@ku.edu</a>
-        <a>+1 785-218-5446</a>
-        <a>Kansas, USA</a>
-    </li>
+  <div class="sidebar-block">
+    <div class="sidebar-title">
+      <i class="fa fa-info"></i> Details
+    </div>
+    <div class="sidebar-item">aqila.hassan@ku.edu</div>
+    <div class="sidebar-item">+1 785-218-5446</div>
+    <div class="sidebar-item">Kansas, USA</div>
+  </div>
 
-    <br><br>
+  <div class="sidebar-block">
+    <div class="sidebar-title">
+      <i class="fa fa-link"></i> Links
+    </div>
+    <a class="sidebar-link" href="https://github.com/aqilahassan-hub/" target="_blank" rel="noopener">GitHub</a>
+    <!-- <a class="sidebar-link" href="https://www.linkedin.com/in/aqila-hassan/" target="_blank" rel="noopener">LinkedIn</a> -->
+  </div>
 
-    <li>
-        <a href="#"><i class="fa fa-link"></i> Links:</a>
-        <!-- <a href="https://www.linkedin.com/in/aqila-hassan/">LinkedIn</a> -->
-        <a href="https://github.com/aqilahassan-hub/">Github</a>
-    </li>
+  <div class="sidebar-block">
+    <div class="sidebar-title">
+      <i class="fa fa-laptop"></i> Skills
+    </div>
+    <div class="chip-list">
+      <span class="chip">C</span>
+      <span class="chip">C++</span>
+      <span class="chip">Java</span>
+      <span class="chip">PHP</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Python</span>
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">Machine Learning</span>
+      <span class="chip">Deep Learning</span>
+      <span class="chip">AWS</span>
+      <span class="chip">PowerBI</span>
+      <span class="chip">Tableau</span>
+      <span class="chip">MySQL</span>
+      <span class="chip">Git</span>
+    </div>
+  </div>
+</aside>
 
-    <br><br>
+<main class="content">
 
-    <li>
-        <a href="#"><i class="fa fa-laptop"></i> Skills:</a><br>
-        <a>Programming: C, C++, Java, PHP, JavaScript</a><br>
-        <a>Python</a><br>
-        <a>HTML, CSS</a><br>
-        <a>Machine Learning, Deep Learning</a><br>
-        <a>Tools: AWS, PowerBI, Tableau, MySQL, Git</a>
-    </li>
-</div>
-
-<div class="content">
-
-    <h2 style="color:#376882"><i class="fa fa-user"></i> Profile</h2>
-    <p>I am organized and successful at managing multiple priorities with
-                    a positive attitude. Have the courage to explore the industry by
-                    experimenting with new things and achieving the goal.</p>
-
-
-    <h2 style="color:#376882"><i class="fa fa-graduation-cap"></i> Education</h2>
-
-    <h4>Master of Science in Computer Science</h4>
-    <h5>University (Kansas, USA) — Jan 2026 – Present</h5>
-
-    <h4>B.Sc. in Computer Science & Engineering</h4>
-    <h5>North South University — Jan 2018 – Dec 2021</h5>
-
-
-    <h2 style="color:#376882"><i class="fa fa-building"></i> Experience</h2>
-
-    <h3>Graduate Teaching Assistant (GTA)</h3>
-    <h5>University in Kansas, USA — Jan 2026 – Present</h5>
+  <section class="card">
+    <h2 class="section-title"><i class="fa fa-user"></i> Profile</h2>
     <p>
-        Assist in teaching undergraduate computing courses, grading assignments,
-        mentoring students, and supporting lab sessions. Facilitate learning of
-        programming and software engineering fundamentals.
+      I am organized and successful at managing multiple priorities with a positive attitude.
+      I have the courage to explore the industry by experimenting with new things and achieving goals.
     </p>
+  </section>
 
-    <h3>Software Engineer</h3>
-    <h5>Computer Network Systems Limited — May 2023 – Feb 2025</h5>
-    <p>
-        Built automated training management systems and optimized machine
-        learning pipelines for enterprise-scale applications. Designed data
-        infrastructure for model deployment and monitoring.
-    </p>
+  <section class="card">
+    <h2 class="section-title"><i class="fa fa-graduation-cap"></i> Education</h2>
 
-    <h3>Software QA Engineer Intern</h3>
-    <h5>Advanced Chemical Industries — Dec 2021 – May 2022</h5>
-    <p>
-        Developed data pipelines for ML workflows and supported explainable AI
-        tooling and reporting systems.
-    </p>
+    <div class="item">
+      <div class="item-header">
+        <h4>Master of Science in Computer Science</h4>
+        <span class="meta">Jan 2026 – Present</span>
+      </div>
+      <div class="submeta">University (Kansas, USA)</div>
+    </div>
 
+    <div class="divider"></div>
 
-    <h2 style="color:#376882"><i class="fa fa-trophy"></i> Achievements</h2>
-    KU Blockchain Hackathon — 1st Runner-up (2025)<br>
-    KU Blockchain Hackathon — 2nd Runner-up (2025)<br>
-    Huawei ICT Competition Finalist (Top 10)<br>
-    Cisco Networking Competition Final Round<br>
-    ACM-W Treasurer (2021–2022)
+    <div class="item">
+      <div class="item-header">
+        <h4>B.Sc. in Computer Science & Engineering</h4>
+        <span class="meta">Jan 2018 – Dec 2021</span>
+      </div>
+      <div class="submeta">North South University</div>
+    </div>
+  </section>
 
+  <section class="card">
+    <h2 class="section-title"><i class="fa fa-building"></i> Experience</h2>
 
-    <h2 style="color:#376882"><i class="fa fa-briefcase"></i> Projects</h2>
+    <div class="item">
+      <div class="item-header">
+        <h3>Graduate Teaching Assistant (GTA)</h3>
+        <span class="meta">Jan 2026 – Present</span>
+      </div>
+      <div class="submeta">University in Kansas, USA</div>
+      <p>
+        Assist in teaching undergraduate computing courses, grading assignments, mentoring students,
+        and supporting lab sessions. Facilitate learning of programming and software engineering fundamentals.
+      </p>
+    </div>
 
-    <h4>Multi-Domain Endoscopic Surgeon Action Detection</h4>
-    <p>Deep learning system for recognizing surgical actions in endoscopic video.</p>
+    <div class="divider"></div>
 
-    <h4>AI Training Management Platform (BISDP)</h4>
-    <p>LLM-powered automated training documentation and analytics system.</p>
+    <div class="item">
+      <div class="item-header">
+        <h3>Software Engineer</h3>
+        <span class="meta">May 2023 – Feb 2025</span>
+      </div>
+      <div class="submeta">Computer Network Systems Limited</div>
+      <p>
+        Built automated training management systems and optimized machine learning pipelines for enterprise-scale applications.
+        Designed data infrastructure for model deployment and monitoring.
+      </p>
+    </div>
 
-    <h4>Spotify Analytics Dashboard</h4>
-    <p>Interactive data visualization platform using API and PowerBI.</p>
+    <div class="divider"></div>
 
+    <div class="item">
+      <div class="item-header">
+        <h3>Software QA Engineer Intern</h3>
+        <span class="meta">Dec 2021 – May 2022</span>
+      </div>
+      <div class="submeta">Advanced Chemical Industries</div>
+      <p>
+        Developed data pipelines for ML workflows and supported explainable AI tooling and reporting systems.
+      </p>
+    </div>
+  </section>
 
-    <h2 style="color:#376882"><i class="fa fa-globe"></i> Languages</h2>
-    Bengali — Native<br>
-    English — Fluent
+  <section class="card">
+    <h2 class="section-title"><i class="fa fa-trophy"></i> Achievements</h2>
+    <ul class="bullets">
+      <li>KU Blockchain Hackathon — 1st Runner-up (2025)</li>
+      <li>KU Blockchain Hackathon — 2nd Runner-up (2025)</li>
+      <li>Huawei ICT Competition Finalist (Top 10)</li>
+      <li>Cisco Networking Competition Final Round</li>
+      <li>ACM-W Treasurer (2021–2022)</li>
+    </ul>
+  </section>
 
+  <section class="card">
+    <h2 class="section-title"><i class="fa fa-briefcase"></i> Projects</h2>
 
-    <footer class="footer">
-        <h3>&copy; Aqila Hassan</h3>
-    </footer>
+    <div class="item">
+      <h4>Multi-Domain Endoscopic Surgeon Action Detection</h4>
+      <p>Deep learning system for recognizing surgical actions in endoscopic video.</p>
+    </div>
 
-</div>
+    <div class="divider"></div>
+
+    <div class="item">
+      <h4>AI Training Management Platform (BISDP)</h4>
+      <p>LLM-powered automated training documentation and analytics system.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="item">
+      <h4>Spotify Analytics Dashboard</h4>
+      <p>Interactive data visualization platform using API and PowerBI.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title"><i class="fa fa-globe"></i> Languages</h2>
+    <ul class="bullets">
+      <li>Bengali — Native</li>
+      <li>English — Fluent</li>
+    </ul>
+  </section>
+
+  <footer class="footer card footer-card">
+    <h3>&copy; Aqila Hassan</h3>
+  </footer>
+
+</main>
+
 </body>
 </html>
-
-
-
-
-
