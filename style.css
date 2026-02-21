@@ -159,3 +159,87 @@ header{
     padding: 25px;
   }
 }
+
+/* ---------- HTML Enhancements (for cards, chips, etc.) ---------- */
+.topbar { background:#1f2933; height:90px; }
+.topbar-inner{ height:100%; display:flex; align-items:center; padding:0 26px; }
+.brand{ display:flex; align-items:center; gap:10px; color:#e2e8f0; font-weight:600; }
+.brand-dot{ width:10px; height:10px; border-radius:50%; background:var(--accent); }
+.brand-text{ opacity:0.9; }
+
+.name{ margin:10px 0 6px; }
+.role{ margin:0; }
+
+.sidebar-block{ margin-top:18px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); }
+.sidebar-title{ color:#cbd5e1; font-weight:700; margin-bottom:10px; font-size:14px; }
+.sidebar-item{ color:rgba(255,255,255,0.85); font-size:14px; margin:6px 0; }
+.sidebar-link{ display:block; margin:6px 0; font-size:15px; }
+
+.card{
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 22px 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.section-title{
+  margin: 0 0 14px;
+  font-size: 24px;
+  color: #1f3a52;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.item{ margin: 0; }
+.item-header{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.meta{
+  color: var(--muted);
+  font-size: 14px;
+  white-space: nowrap;
+}
+.submeta{
+  color: var(--muted);
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.divider{
+  height: 1px;
+  background: #e2e8f0;
+  margin: 14px 0;
+}
+
+.bullets{
+  margin: 0;
+  padding-left: 18px;
+}
+.bullets li{
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.chip-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.chip{
+  background: rgba(21, 177, 205, 0.14);
+  border: 1px solid rgba(21, 177, 205, 0.25);
+  color: #e6f7fb;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.footer-card{ text-align:center; }
+
